@@ -16,10 +16,10 @@
 			<result name="error">/error.jsp</result>
 		</action>
 		
-		<action name = "signup" class = "com.rejish.action.SignupAction">
+		<!-- <action name = "signup" class = "com.rejish.action.SignupAction">
 			<result name = "success">/home.jsp</result>
 			<result name = "error">/error.jsp</result>
-		</action>
+		</action> -->
 		
 		
 	

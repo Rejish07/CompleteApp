@@ -1,21 +1,22 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
-<html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Signup</title>
+    <meta charset="UTF-8">
+    <title>Signup Page</title>
 </head>
 <body>
     <h2>Signup Form</h2>
-    <s:form action="signup" method="POST">
-        <label>Name:</label>
-        <s:textfield name="name" required="true" /><br>
-
-        <label>Email:</label>
-        <s:textfield name="email" required="true" /><br>
-
-        <label>Password:</label>
-        <s:password name="password" required="true" /><br>
-
+    
+    <s:form action="signupAction" method="post">
+        <s:textfield name="username" label="Username" placeholder="Enter username" required="true" />
+        <s:textfield name="email" label="Email" placeholder="Enter email" required="true" />
+        <s:password name="password" label="Password" placeholder="Enter password" required="true" />
+        
         <s:submit value="Signup" />
     </s:form>
+
+    <p>Already have an account? <a href="login.jsp">Login here</a></p>
 </body>
 </html>
